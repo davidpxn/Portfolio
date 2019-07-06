@@ -1,0 +1,37 @@
+@import '../../config.scss';
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;;
+
+  padding: 0.5rem 1rem;
+
+  -ms-overflow-style: none;  // IE 10+
+  scrollbar-width: none;  // Firefox
+
+  &::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
+  }
+
+  &__tab {
+    margin: 0.5rem;
+    padding: 0.5rem;
+
+    font-size: $size-large;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+    
+    color: $color-font-disabled;
+
+    &--selected {
+      color: $color-font;
+    }
+
+    &:last-child {
+      padding-right: 2rem;
+    }
+  }
+}
