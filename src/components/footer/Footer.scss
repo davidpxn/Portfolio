@@ -1,0 +1,31 @@
+@import '../../config.scss';
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: auto;
+  
+  font-size: $size-small;
+
+  &__contact-info {
+    margin: 1rem;
+  }
+
+  &__contact-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  
+    fill: $color-icon;
+    transition: $transistion-hover;
+  
+    &:hover {
+      fill: black;
+    }
+  }
+}

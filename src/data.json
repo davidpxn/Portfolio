@@ -1,0 +1,34 @@
+{
+  "contactInfo": {
+    "phone": "857-2917",
+    "email": "xuanphuong97@gmail.com",
+    "githubURL": "https://github.com/davidpxn",
+    "githubShort": "github/davidpxn"
+  },
+  "categories": [
+    {
+      "title": "About me",
+      "slug": ""
+    },
+    {
+      "title": "Experience",
+      "slug": "experience"
+    },
+    {
+      "title": "Education",
+      "slug": "education"
+    },
+    {
+      "title": "Projects",
+      "slug": "projects"
+    },
+    {
+      "title": "Coding",
+      "slug": "coding"
+    },
+    {
+      "title": "More",
+      "slug": "more"
+    }
+  ]
+}
