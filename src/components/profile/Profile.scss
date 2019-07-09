@@ -1,0 +1,32 @@
+@import '../../config.scss';
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin: 1rem;
+    font-weight: bold;
+  }
+
+  &__contact {
+    margin-bottom: 1rem;
+    font-size: $size-small;
+    text-align: center;
+    color: $color-font-secondary;
+  }
+  
+  &__about {
+    margin: 1rem 1rem 0 1rem;
+  }
+}

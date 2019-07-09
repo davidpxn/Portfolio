@@ -12,15 +12,17 @@ import data from './data.json';
 
 
 function App() {
-  console.log(data);
   return (
     <div className="app">
       <Helmet defaultTitle="Portfolio" titleTemplate="Portfolio - %s" />
       <Navbar tabs={data.categories} />
       <Switch>
-        <Route exact path="/" component={About}/>
+        <Route
+          exact path='/'
+          render={(props) => <About {...props} info={data.info} />}
+  	    />
       </Switch>
-      <Footer contactInfo={data.contactInfo}/>
+      <Footer info={data.info}/>
     </div>
   );
 }

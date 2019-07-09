@@ -1,9 +1,12 @@
 {
-  "contactInfo": {
+  "info": {
+    "name": "Davíð Phuong Xuan Nguyen",
+    "img": "/img/me.jpg",
     "phone": "857-2917",
     "email": "xuanphuong97@gmail.com",
     "githubURL": "https://github.com/davidpxn",
-    "githubShort": "github/davidpxn"
+    "githubShort": "github/davidpxn",
+    "about": "Morbi commodo lacus nec diam ultrices, id posuere ex congue. Fusce egestas vitae arcu sit amet ultricies. Donec faucibus eget ipsum gravida iaculis. Fusce vehicula venenatis risus nec cursus. Ut rutrum ut nunc eget tristique. Nam vel tristique purus. Suspendisse nec lacus nisl. Aliquam id iaculis lorem, ut cursus libero. Mauris ac lorem in felis sollicitudin porttitor.\n Aliquam venenatis finibus facilisis. Phasellus eu magna quam. Curabitur volutpat dui at dui volutpat ultrices. Etiam feugiat, nisl eget dapibus pulvinar, magna est vehicula erat, quis ultrices sem massa eget lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam placerat tristique quam, laoreet rutrum justo laoreet vitae. Nulla sed mi risus. Aenean at sodales ligula. Proin tristique sit amet sem sit amet laoreet."
   },
   "categories": [
     {
