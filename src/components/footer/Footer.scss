@@ -3,17 +3,23 @@
 
 .footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 
   margin-top: 3rem;
-  
-  font-size: $size-small;
+  padding: 1rem;
+  background-color: $color-primary;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
 
   &__contact-info {
     margin: 1rem;
   }
 
   &__contact-icon {
+    vertical-align: middle;
     width: 1.5rem;
     height: 1.5rem;
   
@@ -21,7 +27,13 @@
     transition: $transistion-hover;
   
     &:hover {
-      fill: black;
+      fill: $color-icon-secondary;
     }
+  }
+
+  &__short-name {
+    font-size: $size-small;
+    text-align: center;
+    color: $color-font-reverse;
   }
 }
