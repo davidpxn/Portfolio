@@ -19,7 +19,7 @@
     margin: 0.5rem;
     padding: 0.5rem;
 
-    font-size: $size-large;
+    font-size: $size-xlarge;
     font-weight: bold;
     white-space: nowrap;
     text-decoration: none;
@@ -27,7 +27,7 @@
     color: $color-font-disabled;
 
     &--selected {
-      color: $color-font;
+      color: $color-font-heading;
     }
 
     &:last-child {

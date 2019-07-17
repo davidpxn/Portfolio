@@ -32,8 +32,8 @@ export default function Footer(props) {
           </svg>
         </a>
       </div>
-      
-      <p className="footer__short-name"> {info.shortName} </p>
+
+      <h3 className="footer__short-name"> {info.shortName} </h3>
     </footer>
   );
 }

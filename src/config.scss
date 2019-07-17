@@ -1,21 +1,29 @@
 /* Colors */
 
-$color-font: #000000;
-$color-font-secondary: #9ea0a6;
-$color-font-reverse: #ffffff;
+$color-font-text: #000000;
+$color-font-heading: #083045;
+$color-font-light: #9ea0a6;
 $color-font-disabled: #c9c9c9;
-$color-primary: #4dc2cf;
-$color-icon: #ffffff;
-$color-icon-secondary: #000000;
+
+$color-theme-primary: #262c30;;
+$color-theme-secondary: #688a9e;
+$color-theme-light: #ffffff;
 
 
 /* Font sizes */
 
 $size-small: 14px;
 $size-normal: 16px;
-$size-large: 24px;
+$size-large: 20px;
+$size-xlarge: 24px;
 
 
 /* Animations */
 
-$transistion-hover: fill 300ms ease-in-out;
+$transistion-fill: fill 300ms ease-in-out;
+$transistion-transform: transform 500ms ease;
+
+
+/* Other constants */
+
+$radius-border: 14px;

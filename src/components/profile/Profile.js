@@ -9,10 +9,10 @@ export default function Profile(props) {
   return (
     <div className="profile">
       <img className="profile__img" src={info.img} alt="Davíð Phuong Xuan Nguyen"/>
-      <p className="profile__name"> {info.name} </p> 
+      <h2 className="profile__name"> {info.name} </h2> 
       <div className="profile__contact">
-        <p>{info.email}</p>
-        <p>{info.phone}</p>
+        <h3>{info.email}</h3>
+        <h3>{info.phone}</h3>
       </div>  
       {info.about.split('\n').map((p,i) => (
         <p className="profile__about" key={i}> {p} </p>

@@ -16,14 +16,20 @@
 
   &__name {
     margin: 1rem;
+    font-size: $size-large;
     font-weight: bold;
+    color: $color-font-heading;
   }
 
   &__contact {
     margin-bottom: 1rem;
-    font-size: $size-small;
-    text-align: center;
-    color: $color-font-secondary;
+
+    & > * {
+      font-size: $size-small;
+      font-weight: bold;
+      text-align: center;
+      color: $color-font-light;
+    }
   }
   
   &__about {

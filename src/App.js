@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { Route, Switch } from 'react-router-dom'
 
 import About from './routes/about/About';
+import Experience from './routes/experience/Experience';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer'
@@ -20,6 +21,10 @@ function App() {
         <Route
           exact path='/'
           render={(props) => <About {...props} info={data.info} />}
+  	    />
+        <Route
+          exact path='/experience'
+          render={(props) => <Experience {...props} experience={data.categories.find(c => c.slug === 'experience')} />}
   	    />
       </Switch>
       <Footer info={data.info}/>

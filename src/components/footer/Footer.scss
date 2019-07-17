@@ -7,7 +7,7 @@
 
   margin-top: 3rem;
   padding: 1rem;
-  background-color: $color-primary;
+  background-color: $color-theme-primary;
 
   &__links {
     display: flex;
@@ -23,17 +23,25 @@
     width: 1.5rem;
     height: 1.5rem;
   
-    fill: $color-icon;
-    transition: $transistion-hover;
-  
-    &:hover {
-      fill: $color-icon-secondary;
-    }
+    fill: $color-theme-secondary;
+    transition: $transistion-fill;
   }
 
   &__short-name {
     font-size: $size-small;
+    font-weight: normal;
     text-align: center;
-    color: $color-font-reverse;
+    color: $color-theme-secondary;
   }
+}
+
+
+@media (min-width: 800px) {
+
+  .footer {
+    &__contact-icon:hover {
+      fill: $color-theme-light;
+    }
+  }
+
 }
