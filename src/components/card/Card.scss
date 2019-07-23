@@ -1,0 +1,93 @@
+@import '../../config.scss';
+
+
+.card-container {
+  perspective: 1200px;
+}
+
+.card {
+  width: 80vw;
+  height: 60vh;
+  max-width: 400px;
+  margin: 2rem;
+
+  border-radius: $radius-border;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  
+  &--flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.card--front, .card--back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;	
+
+  position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.card--front {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &-container {
+      height: 80%;
+      width: 100%;
+      overflow: hidden;
+      border-radius: $radius-border $radius-border 0 0;
+    }
+  }
+
+  &__info {
+    margin: 1.5rem 1rem;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+    font-size: $size-large;
+    font-weight: bold;
+    color: $color-font-heading;
+  }
+
+  &__subtitle {
+    font-size: $size-small;
+    font-weight: bold;
+    color: $color-font-light;
+  }
+}
+
+
+.card--back {
+  padding: 1rem;
+  transform: rotateY(180deg);
+
+  &__info {
+    text-align: right;
+    color: $color-font-heading;
+    border-radius: $radius-border $radius-border 0 0;
+
+    & > * {
+      font-size: $size-normal;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
+  }
+
+  &__paragraph {
+    margin-top: 0.5rem;
+  }
+}

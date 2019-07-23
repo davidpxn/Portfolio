@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Text from '../text/Text'
+
 import './Profile.scss';
 
 
@@ -14,9 +16,9 @@ export default function Profile(props) {
         <h3>{info.email}</h3>
         <h3>{info.phone}</h3>
       </div>  
-      {info.about.split('\n').map((p,i) => (
-        <p className="profile__about" key={i}> {p} </p>
-      ))}
+      <div className="profile__about">
+        <Text text={info.about} align="center"/>
+      </div>
     </div>
   );
 }
