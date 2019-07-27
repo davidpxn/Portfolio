@@ -36,11 +36,13 @@
 .card--front {
   display: flex;
   flex-direction: column;
+  transform: rotateY(0deg);
 
   &__img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: $transistion-transform;
 
     &-container {
       height: 80%;
@@ -91,3 +93,14 @@
     margin-top: 0.5rem;
   }
 }
+
+@media (min-width: 800px) {
+
+  .card {
+    &:hover &--front__img {
+      transform: scale(1.2);
+    }
+    
+  }
+
+} 
