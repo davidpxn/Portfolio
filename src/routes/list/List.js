@@ -2,10 +2,11 @@ import React, {useState}  from 'react';
 
 import Card from '../../components/card/Card';
 
-import './Experience.scss';
+import './List.scss';
 
 
-export default function Experience(props) {
+export default function List(props) {
+  console.log(props.category);
   const [rotatedCard, setRotatedCard] = useState(null);
 
   function changeRotatedCard(company) {
@@ -16,17 +17,17 @@ export default function Experience(props) {
   }
 
   return (
-    <div className="experience">
-      {props.experience.content.map((job,i) => (
+    <div className="list">
+      {props.category.content.map((item,i) => (
         <Card
           item={{
-            id: job.company,
-            img: job.img,
-            frontTitle: job.company,
-            frontSubtitle: job.position,
-            backTitle: job.location,
-            backSubtitle: job.period,
-            text: job.description
+            id: item.title,
+            img: item.img,
+            frontTitle: item.title,
+            frontSubtitle: item.subtitle,
+            backTitle: item.period,
+            backSubtitle: item.location,
+            text: item.description
           }}
           rotatedCard={rotatedCard}
           changeRotatedCard={changeRotatedCard}

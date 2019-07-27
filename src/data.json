@@ -11,40 +11,36 @@
   },
   "categories": [
     {
-      "title": "About me",
-      "slug": ""
-    },
-    {
       "title": "Experience",
       "slug": "experience",
       "content": [
         {
-          "company": "LS Retail",
-          "position": "Developer",
+          "title": "LS Retail",
+          "subtitle": "Developer",
           "location": "Reykjavik, Iceland",
           "period": "Summer 2019",
           "description": "I was hired as a summer intern developer at LS Retail and was lucky enough to get handed a very real project for the summer, which gave me a lot of experience. I worked on an integration with a web service, using mostly .NET and C#.",
           "img": "img/ls_retail.png"
         },
         {
-          "company": "University of Iceland",
-          "position": "Teaching assistant",
+          "title": "University of Iceland",
+          "subtitle": "Teaching assistant",
           "location": "Reykjavik, Iceland",
           "period": "2018",
           "description": "In the fall of 2018 I was a teaching assistant for an introduction course in programming, at the University of Iceland.\nThe course used Java to introduce basic practices in computer programming.",
           "img": "img/university_of_iceland.png"
         },
         {
-          "company": "Isavia",
-          "position": "Passenger service",
+          "title": "Isavia",
+          "subtitle": "Passenger service",
           "location": "Keflavik, Iceland",
           "period": "Summer 2017",
           "description": "I worked in passenger service at Keflavik Airport, in the summer of 2017.\nOur responsibility there was, e.g. to help passangers, assist with passenger flow control, manage the service desks and more.",
           "img": "img/isavia.png"
         },
         {
-          "company": "Esja Gæðafæði",
-          "position": "General worker",
+          "title": "Esja Gæðafæði",
+          "subtitle": "General worker",
           "location": "Reykjavik, Iceland",
           "period": "Summers 2013 – 2016",
           "description": "My first ever job was at a meat processing company and I worked there for 4 summers, while I was in junior collage.\nI did all kind of things there, from packaging to making hamburgers and much more.",
@@ -57,16 +53,16 @@
       "slug": "education",
       "content": [
         {
-          "school": "University of Iceland",
-          "degree": "BSc Software Engineering",
+          "title": "University of Iceland",
+          "subtitle": "BSc Software Engineering",
           "location": "Reykjavik, Iceland",
           "period": "2017 - 2020",
           "description": "I went straight to university after having finsihed junior collage and chose to study software engineering. I currently have one year left before I receive my BSc degree.",
           "img": "img/university_of_iceland.png"
         },
         {
-          "school": "Reykjavik Junior College",
-          "degree": "‘Stúdentspróf‘",
+          "title": "Reykjavik Junior College",
+          "subtitle": "‘Stúdentspróf‘",
           "location": "Reykjavik, Iceland",
           "period": "2013 - 2017",
           "description": "I attended Reykjavik Junior Collage with focus on math and physics.\nAfter four years I received my 'Stúdentspróf' there, which corresponds roughly to A-levels or a High School Diploma.\n",
@@ -76,15 +72,16 @@
     },
     {
       "title": "Projects",
-      "slug": "projects"
-    },
-    {
-      "title": "Coding",
-      "slug": "coding"
-    },
-    {
-      "title": "More",
-      "slug": "more"
+      "slug": "projects",
+      "content": [
+        {
+          "title": "Vrúmm",
+          "subtitle": "App Android/iOS",
+          "period": "2018",
+          "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of this year, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. A user can create an add for a car, browse other cars and message users through the app.",
+          "img": "img/vrumm.png"
+        }
+      ]
     }
   ]
 }

@@ -3,8 +3,7 @@ import Helmet from 'react-helmet';
 import { Route, Switch } from 'react-router-dom'
 
 import About from './routes/about/About';
-import Experience from './routes/experience/Experience';
-import Education from './routes/education/Education';
+import List from './routes/list/List';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer'
@@ -14,23 +13,29 @@ import data from './data.json';
 
 
 function App() {
+  const navbarCategories = [...data.categories];
+  navbarCategories.unshift (
+    {
+      title: 'About',
+      slug: ''
+    }
+  )
+  
   return (
     <div className="app">
       <Helmet defaultTitle="Portfolio" titleTemplate="Portfolio - %s" />
-      <Navbar tabs={data.categories} />
+      <Navbar tabs={navbarCategories} />
       <Switch>
         <Route
           exact path='/'
           render={(props) => <About {...props} info={data.info} />}
-  	    />
-        <Route
-          exact path='/experience'
-          render={(props) => <Experience {...props} experience={data.categories.find(c => c.slug === 'experience')} />}
         />
-        <Route
-          exact path='/education'
-          render={(props) => <Education {...props} education={data.categories.find(c => c.slug === 'education')} />}
-  	    />
+        {data.categories.map((category) => (
+          <Route
+            exact path={`/${category.slug}`}
+            render={(props) => <List {...props} category={category} />}
+          />
+        ))}
       </Switch>
       <Footer info={data.info}/>
     </div>
