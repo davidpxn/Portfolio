@@ -11,7 +11,7 @@ export default function CardFlat(props)
   const fadeType = props.index % 2 === 0 ? 'fade-left' : 'fade-right';
 
   return (
-    <div className="card-flat" data-aos={fadeType} data-aos-duration="1000" data-aos-offset="-100" data-aos-once="true">
+    <div className="card-flat" data-aos={fadeType} data-aos-duration="1000" data-aos-once="true">
       <div className="card-flat__img-container">
         <img className="card-flat__img" src={item.img} alt={item.title} />
       </div>
