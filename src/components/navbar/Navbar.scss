@@ -4,34 +4,80 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  overflow: auto;;
+  overflow: auto;
 
   padding: 0.5rem 1rem;
+  font-family: $font-navbar;
 
-  -ms-overflow-style: none;  // IE 10+
-  scrollbar-width: none;  // Firefox
+  -ms-overflow-style: none;  //No scrollbar, IE 10+
+  scrollbar-width: none;  //No scrollbar, Firefox
 
   &::-webkit-scrollbar { 
-    display: none;  // Safari and Chrome
+    display: none;  //No scrollbar, Safari and Chrome
   }
 
   &__tab {
     margin: 0.5rem;
     padding: 0.5rem;
 
-    font-size: $size-xlarge;
+    font-size: $size-large;
     font-weight: bold;
     white-space: nowrap;
-    text-decoration: none;
-    
+    text-decoration: none; 
     color: $color-font-disabled;
 
     &--selected {
-      color: $color-font-heading;
+      color: $color-font-main;
+
+      &:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px $color-theme-dark;  
+        padding-top: 1px;
+        transform: scaleX(1.1);
+      }
     }
 
     &:last-child {
       padding-right: 2rem;
     }
   }
+}
+
+
+@media (min-width: 800px) {
+
+  .navbar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: fixed;
+    height: 100%;
+    width: 200px;
+
+    &__tab {
+      padding: 0; 
+
+      &:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px $color-theme-dark;  
+        padding-top: 1px;
+
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        transform-origin: 0% 50%;
+      }
+
+      &--selected:after, &:hover:after {
+        transform: scaleX(1.1);
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }   
+    }
+  }
+  
 }

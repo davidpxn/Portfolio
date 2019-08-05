@@ -15,20 +15,19 @@
 
 html {
   box-sizing: border-box;
+}
+
+body {
   overflow-x: hidden;
   overflow-y: scroll;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-main;
   font-size: $size-normal;
-  color: $color-font-text;
+  line-height: 150%;
+  color: $color-font-main;
+  background-color: $color-theme-light;
 }
 
 img {
   max-width: 100%;
-}
-
-.app {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
 }

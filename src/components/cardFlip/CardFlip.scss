@@ -1,5 +1,7 @@
 @import '../../config.scss';
 
+$radius-border: 14px;
+
 
 .card-container {
   perspective: 1200px;
@@ -10,13 +12,13 @@
   height: 60vh;
   max-width: 400px;
   margin: 2rem;
-
+  
   border-radius: $radius-border;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 
   transform-style: preserve-3d;
-  transition: transform 300ms;
+  transition: transform 300ms ease;
   
   &--flip {
     transform: rotateY(180deg);
@@ -36,13 +38,11 @@
 .card--front {
   display: flex;
   flex-direction: column;
-  transform: rotateY(0deg);
 
   &__img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: $transistion-transform;
 
     &-container {
       height: 80%;
@@ -57,19 +57,16 @@
   }
 
   &__title {
-    margin-bottom: 3px;
     font-size: $size-large;
     font-weight: bold;
-    color: $color-font-heading;
   }
 
   &__subtitle {
+    margin-top: 3px;
     font-size: $size-small;
     font-weight: bold;
-    color: $color-font-light;
   }
 }
-
 
 .card--back {
   padding: 1rem;
@@ -77,8 +74,6 @@
 
   &__info {
     text-align: right;
-    color: $color-font-heading;
-    border-radius: $radius-border $radius-border 0 0;
 
     & > * {
       font-size: $size-normal;
@@ -88,19 +83,4 @@
   &__text {
     margin-top: 2rem;
   }
-
-  &__paragraph {
-    margin-top: 0.5rem;
-  }
 }
-
-@media (min-width: 800px) {
-
-  .card {
-    &:hover &--front__img {
-      transform: scale(1.2);
-    }
-    
-  }
-
-} 

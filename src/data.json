@@ -1,13 +1,12 @@
 {
   "info": {
     "name": "Davíð Phuong Xuan Nguyen",
-    "shortName": "davidpxn",
+    "shortName": "davidpxn.",
     "img": "img/me.jpg",
-    "phone": "857-2917",
+    "messenger": "https://m.me/davidpxn",
     "email": "davidpxn97@gmail.com",
-    "githubURL": "https://github.com/davidpxn",
-    "githubShort": "github/davidpxn",
-    "about": "Morbi commodo lacus nec diam ultrices, id posuere ex congue. Fusce egestas vitae arcu sit amet ultricies. Donec faucibus eget ipsum gravida iaculis. Fusce vehicula venenatis risus nec cursus. Ut rutrum ut nunc eget tristique. Nam vel tristique purus. Suspendisse nec lacus nisl. Aliquam id iaculis lorem, ut cursus libero. Mauris ac lorem in felis sollicitudin porttitor.\n Aliquam venenatis finibus facilisis. Phasellus eu magna quam. Curabitur volutpat dui at dui volutpat ultrices. Etiam feugiat, nisl eget dapibus pulvinar, magna est vehicula erat, quis ultrices sem massa eget lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam placerat tristique quam, laoreet rutrum justo laoreet vitae. Nulla sed mi risus. Aenean at sodales ligula. Proin tristique sit amet sem sit amet laoreet."
+    "github": "https://github.com/davidpxn",
+    "about": "Hi, my name is Davíð.\nI'm a 22 years old software engineering student at the University of Iceland. Located in Reykjavik, I'm an everything software and technology enthusiast."
   },
   "categories": [
     {
@@ -15,36 +14,44 @@
       "slug": "experience",
       "content": [
         {
+          "id": "experience_lsretail",
           "title": "LS Retail",
           "subtitle": "Developer",
           "location": "Reykjavik, Iceland",
           "period": "Summer 2019",
           "description": "I was hired as a summer intern developer at LS Retail and was lucky enough to get handed a very real project for the summer, which gave me a lot of experience. I worked on an integration with a web service, using mostly .NET and C#.",
-          "img": "img/ls_retail.png"
+          "img": "img/ls_retail.png",
+          "color": "#004a87"
         },
         {
+          "id": "experience_hi",
           "title": "University of Iceland",
           "subtitle": "Teaching assistant",
           "location": "Reykjavik, Iceland",
           "period": "2018",
           "description": "In the fall of 2018 I was a teaching assistant for an introduction course in programming, at the University of Iceland.\nThe course used Java to introduce basic practices in computer programming.",
-          "img": "img/university_of_iceland.png"
+          "img": "img/hi.png",
+          "color": "#4a4a4a"
         },
         {
+          "id": "experience_isavia",
           "title": "Isavia",
           "subtitle": "Passenger service",
           "location": "Keflavik, Iceland",
           "period": "Summer 2017",
           "description": "I worked in passenger service at Keflavik Airport, in the summer of 2017.\nOur responsibility there was, e.g. to help passangers, assist with passenger flow control, manage the service desks and more.",
-          "img": "img/isavia.png"
+          "img": "img/isavia.png",
+          "color": "#e65500"
         },
         {
+          "id": "experience_esja",
           "title": "Esja Gæðafæði",
           "subtitle": "General worker",
           "location": "Reykjavik, Iceland",
           "period": "Summers 2013 – 2016",
           "description": "My first ever job was at a meat processing company and I worked there for 4 summers, while I was in junior collage.\nI did all kind of things there, from packaging to making hamburgers and much more.",
-          "img": "img/esja.png"
+          "img": "img/esja.png",
+          "color": "#8c1616"
         }
       ]
     },
@@ -53,20 +60,24 @@
       "slug": "education",
       "content": [
         {
+          "id": "education_hi",
           "title": "University of Iceland",
           "subtitle": "BSc Software Engineering",
           "location": "Reykjavik, Iceland",
           "period": "2017 - 2020",
           "description": "I went straight to university after having finsihed junior collage and chose to study software engineering. I currently have one year left before I receive my BSc degree.",
-          "img": "img/university_of_iceland.png"
+          "img": "img/hi.png",
+          "color": "#4a4a4a"
         },
         {
+          "id": "education_mr",
           "title": "Reykjavik Junior College",
           "subtitle": "‘Stúdentspróf‘",
           "location": "Reykjavik, Iceland",
           "period": "2013 - 2017",
           "description": "I attended Reykjavik Junior Collage with focus on math and physics.\nAfter four years I received my 'Stúdentspróf' there, which corresponds roughly to A-levels or a High School Diploma.\n",
-          "img": "img/mr.png"
+          "img": "img/mr.png",
+          "color": "#608b96"
         }
       ]
     },
@@ -75,11 +86,13 @@
       "slug": "projects",
       "content": [
         {
+          "id": "projects_vrumm",
           "title": "Vrúmm",
           "subtitle": "App Android/iOS",
           "period": "2018",
           "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of this year, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. A user can create an add for a car, browse other cars and message users through the app.",
-          "img": "img/vrumm.png"
+          "img": "img/vrumm.png",
+          "color": "#76b26c"
         }
       ]
     }

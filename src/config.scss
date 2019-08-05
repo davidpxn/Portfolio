@@ -1,13 +1,18 @@
 /* Colors */
 
-$color-font-text: #000000;
-$color-font-heading: #083045;
+$color-font-main: #000000;
 $color-font-light: #9ea0a6;
 $color-font-disabled: #c9c9c9;
 
-$color-theme-primary: #262c30;;
-$color-theme-secondary: #688a9e;
+$color-theme-dark: #000000;
 $color-theme-light: #ffffff;
+$color-theme-mid: #9ea0a6;
+
+
+/* Fonts */
+
+$font-main: 'Ubuntu', sans-serif;
+$font-navbar: 'Poppins', sans-serif;
 
 
 /* Font sizes */
@@ -16,14 +21,66 @@ $size-small: 14px;
 $size-normal: 16px;
 $size-large: 20px;
 $size-xlarge: 24px;
+$size-xxlarge: 30px;
 
 
 /* Animations */
 
-$transistion-fill: fill 200ms ease-in-out;
-$transistion-transform: transform 500ms ease;
+@keyframes slide-up {
+  0% {
+      opacity: 0;
+      transform: translateY(500px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
 
-/* Other constants */
+@keyframes slide-right {
+  0% {
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
 
-$radius-border: 14px;
+@keyframes slide-up-pause {
+  0% {
+      opacity: 0;
+      transform: translateY(800px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

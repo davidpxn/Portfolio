@@ -1,39 +1,51 @@
 import React, {useState}  from 'react';
 
-import Card from '../../components/card/Card';
+import CardFlip from '../../components/cardFlip/CardFlip';
+import CardFlat from '../../components/cardFlat/CardFlat';
 
 import './List.scss';
 
 
-export default function List(props) {
-  console.log(props.category);
+export default function List(props)
+{
   const [rotatedCard, setRotatedCard] = useState(null);
 
-  function changeRotatedCard(company) {
-    if (rotatedCard === null || rotatedCard !== company)
-      setRotatedCard(company)
+  function changeRotatedCard(cardID) 
+  {
+    if (rotatedCard === null || rotatedCard !== cardID)
+      setRotatedCard(cardID);
     else
       setRotatedCard(null);
   }
 
-  return (
-    <div className="list">
-      {props.category.content.map((item,i) => (
-        <Card
-          item={{
-            id: item.title,
-            img: item.img,
-            frontTitle: item.title,
-            frontSubtitle: item.subtitle,
-            backTitle: item.period,
-            backSubtitle: item.location,
-            text: item.description
-          }}
-          rotatedCard={rotatedCard}
-          changeRotatedCard={changeRotatedCard}
-          key={i}
-        />
-      ))}
-    </div>
-  ); 
+  
+  if (window.innerWidth < 800) 
+  {
+    return (
+      <div className="list">
+        {props.category.content.map((item) => (
+          <CardFlip
+            item={item}
+            rotatedCard={rotatedCard}
+            changeRotatedCard={changeRotatedCard}
+            key={item.id}
+          />
+        ))}
+      </div>
+    ); 
+  }
+  else
+  {
+    return (
+      <div className="list">
+        {props.category.content.map((item,i) => (
+          <CardFlat
+            item={item}
+            index={i}
+            key={item.id}
+          />
+        ))}
+      </div>
+    ); 
+  }
 }

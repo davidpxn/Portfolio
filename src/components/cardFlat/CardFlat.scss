@@ -1,0 +1,86 @@
+@import '../../config.scss';
+
+
+.card-flat {
+  display: flex;
+  margin: 1rem;
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+    
+    width: 40vw;
+    height: 30vw;
+    margin: 2rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 3rem 2rem;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 1rem;
+    font-size: $size-xlarge;
+  }
+
+  &__subtitle {
+    font-size: $size-large;
+    margin-top: 1rem;
+  }
+
+  &__period {
+    font-size: $size-small;
+    margin-top: 1rem;
+    color: $color-font-light;
+  }
+
+  &__text {
+    margin-top: 2rem;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    font-size: $size-small;
+    margin-top: 2rem;
+  }
+  
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    & .card-flat {
+      &__info {
+        align-items: flex-end;
+      }
+
+      &__header {
+        flex-direction: row-reverse;
+      }
+
+      &__text {
+        text-align: right;
+      }
+    }
+  }
+}

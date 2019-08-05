@@ -1,5 +1,8 @@
 @import '../../config.scss';
 
+$animation-duration: 800ms;
+$animation-delay: 200ms;
+
 
 .profile {
   display: flex;
@@ -8,32 +11,68 @@
   margin-top: 2rem;
 
   &__img {
-    width: 40vw;
-    height: 40vw;
+    width: 120px;
+    height: 120px;
+
     border-radius: 50%;
     object-fit: cover;
+    animation: fade-in 2000ms ease;
   }
 
   &__name {
-    margin: 1rem;
-    font-size: $size-large;
-    font-weight: bold;
-    color: $color-font-heading;
+    font-size: $size-xlarge;
+    font-weight: normal;
+    margin-top: 1rem;
+    animation: slide-up $animation-duration ease;
   }
 
-  &__contact {
-    margin-bottom: 1rem;
+  &__about {
+    margin: 2rem;
+    animation: slide-up ($animation-duration + $animation-delay) ease;
+  }
 
-    & > * {
-      font-size: $size-small;
-      font-weight: bold;
-      text-align: center;
-      color: $color-font-light;
+  &__contact-links {
+    margin-top: 1rem;
+    animation: slide-up ($animation-duration + 2*$animation-delay) ease;
+  }
+
+  &__contact-link {
+    margin: 1rem;
+  }
+
+  &__contact-icon {
+    vertical-align: middle;
+    fill: $color-theme-mid;
+    transition: fill 300ms ease;
+  }
+}
+
+
+@media (min-width: 800px) {
+
+  .profile {
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    margin: 0 0 0 200px;
+    padding: 0 10vw;
+
+    &__name {
+      margin-left: 2rem;
+      font-size: $size-xxlarge;
+      line-height: 100%;
+    }
+
+    &__about {
+      min-width: 100%;
+    }
+
+    &__contact-icon:hover {
+      fill: $color-theme-dark;
     }
   }
-  
-  &__about {
-    margin: 1rem 1.5rem;
-    text-align: center;
-  }
+
 }

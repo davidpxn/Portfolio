@@ -1,0 +1,15 @@
+@import '../../config.scss';
+
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: $size-large;
+  animation: slide-up-pause 2500ms ease;
+
+  & * {
+    font-weight: normal;
+  }
+}
