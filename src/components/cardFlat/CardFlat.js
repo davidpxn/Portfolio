@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Text from '../text/Text'
+import Image from '../image/Image'
+
 
 import './CardFlat.scss';
 
@@ -13,7 +15,7 @@ export default function CardFlat(props)
   return (
     <div className="card-flat" data-aos={fadeType} data-aos-duration="1000" data-aos-once="true">
       <div className="card-flat__img-container">
-        <img className="card-flat__img" src={item.img} alt={item.title} />
+        <Image className="card-flat__img" src={item.img} alt={item.title} color={item.color} />
       </div>
 
       <div className="card-flat__info">

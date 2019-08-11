@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import Text from '../text/Text'
+import Image from '../image/Image'
 
 import './CardFlip.scss';
 
@@ -15,7 +16,7 @@ export default function CardFlip(props)
       <div className={classNames('card', {'card--flip': props.rotatedCard === item.id})} onClick={() => props.changeRotatedCard(item.id)}>
         <div className="card--front">
           <div className="card--front__img-container">
-            <img className="card--front__img" src={item.img} alt={item.title} />
+            <Image className="card--front__img" src={item.img} alt={item.title} color={item.color} />
           </div>
           <div className="card--front__info">
             <h2 className="card--front__title">{item.title}</h2>
