@@ -32,7 +32,7 @@ $animation-delay: 200ms;
   }
 
   &__contact-links {
-    margin-top: 1rem;
+    margin: 1rem;
     animation: slide-up ($animation-duration + 2*$animation-delay) ease;
   }
 

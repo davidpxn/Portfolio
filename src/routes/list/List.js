@@ -19,7 +19,7 @@ export default function List(props)
   }
 
   
-  if (window.innerWidth < 800) 
+  if (props.windowWidth < 800) 
   {
     return (
       <div className="list">

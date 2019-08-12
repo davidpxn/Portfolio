@@ -13,9 +13,23 @@ import data from './data.json';
 
 export default function App()
 {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isWelcoming, setIsWelcoming] = useState(true);
+
+  window.addEventListener(
+    "resize",
+    () =>
+    {
+      const width = window.innerWidth;
+      if (width !== windowWidth) 
+      {
+        setWindowWidth(width);
+      }
+    }
+  );
+
+
   let renderElement;
-  
   if (isWelcoming)
   {
     renderElement = <Welcome title={data.info.shortName} setIsWelcoming={setIsWelcoming} />;
@@ -32,7 +46,7 @@ export default function App()
     
     renderElement = (
       <React.Fragment>
-        <Navbar tabs={navbarCategories} />
+        <Navbar tabs={navbarCategories} windowWidth={windowWidth} />
         <Switch>
           <Route
             exact path='/'
@@ -41,7 +55,7 @@ export default function App()
           {data.categories.map((category) => (
             <Route
               exact path={`/${category.slug}`}
-              render={(props) => <List {...props} category={category} />}
+              render={(props) => <List {...props} category={category} windowWidth={windowWidth} />}
               key={category.slug}
             />
           ))}

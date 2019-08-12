@@ -9,8 +9,9 @@ $radius-border: 14px;
 
 .card {
   width: 80vw;
-  height: 60vh;
-  max-width: 400px;
+  height: 100vw;
+  max-width: 300px;
+  max-height: 375px;
   margin: 2rem;
   
   border-radius: $radius-border;
@@ -38,6 +39,7 @@ $radius-border: 14px;
 .card--front {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 
   &__img {
     height: 100%;

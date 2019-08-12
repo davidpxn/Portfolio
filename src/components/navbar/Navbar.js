@@ -6,7 +6,7 @@ import './Navbar.scss';
 
 export default function Navbar(props) 
 {
-  const isMobile = window.innerWidth < 800;
+  const isMobile = props.windowWidth < 800;
 
   return (
     <nav>
