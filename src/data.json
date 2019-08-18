@@ -29,7 +29,7 @@
           "subtitle": "Teaching assistant",
           "location": "Reykjavik, Iceland",
           "period": "2018",
-          "description": "In the fall of 2018 I was a teaching assistant for an introduction course in programming, at the University of Iceland.\nThe course used Java to introduce basic practices in computer programming.",
+          "description": "In the fall of 2018, I was a teaching assistant for an introduction course in programming at the University of Iceland.\nThe course used Java to introduce basic practices in computer programming.",
           "img": "img/hi.png",
           "color": "#4a4a4a"
         },
@@ -49,7 +49,7 @@
           "subtitle": "General worker",
           "location": "Reykjavik, Iceland",
           "period": "Summers 2013 – 2016",
-          "description": "My first ever job was at a meat processing company and I worked there for 4 summers, while I was in junior collage.\nI did all kind of things there, from packaging to making hamburgers and much more.",
+          "description": "My first ever job was at a meat processing company and I worked there for 4 summers, while I was in junior collage.\nI did all kinds of things there, from packaging to making hamburgers and much more.",
           "img": "img/esja.png",
           "color": "#8c1616"
         }
@@ -90,7 +90,7 @@
           "title": "Vrúmm",
           "subtitle": "App Android/iOS",
           "period": "2018",
-          "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of this year, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. A user can create an add for a car, browse other cars and message users through the app.",
+          "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of 2019, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. Users can create an advertisement for a car, browse other cars and message users through the app.",
           "img": "img/vrumm.png",
           "color": "#76b26c"
         }
