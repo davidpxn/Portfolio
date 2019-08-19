@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import AOS from 'aos';
 
 import App from './App';
+import * as serviceWorker from './serviceWorker';
+
 
 import 'aos/dist/aos.css';
 
@@ -16,3 +18,4 @@ ReactDOM.render (
 );
 
 AOS.init();
+serviceWorker.register();
