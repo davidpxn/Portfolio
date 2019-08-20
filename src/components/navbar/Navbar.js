@@ -18,6 +18,7 @@ export default function Navbar(props)
             exact to={`/${tab.slug}`}
             key={tab.slug}
             style={isMobile ? { animation: `slide-down ${300 + i*300}ms ease` } : { animation: `slide-right ${300 + i*300}ms ease` }}
+            replace
           >
             {tab.title}
           </NavLink>
