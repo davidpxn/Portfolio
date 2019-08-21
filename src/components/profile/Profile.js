@@ -23,17 +23,17 @@ export default function Profile(props)
         <Text text={info.about} align="center"/>
       </div>
       <div className="profile__contact-links">
-        <a className="profile__contact-link" href={info.messenger} target="_blank" rel="noopener noreferrer">
-          <svg className="profile__contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <title>Messenger</title>
-            <path d="M12 2C6.52 2 2 6.234 2 11.5c0 2.625 1.2 4.945 3 6.656v4.469l4.188-2.094c.898.254 1.82.469 2.812.469 5.48 0 10-4.234 10-9.5S17.48 2 12 2zm0 2c4.46 0 8 3.379 8 7.5S16.46 19 12 19c-.941 0-1.84-.152-2.688-.438l-.406-.125-.375.188-1.531.75v-2l-.344-.313C5.023 15.68 4 13.707 4 11.5 4 7.379 7.54 4 12 4zm-.938 5.031L6.157 14.22l4.407-2.469 2.374 2.531 4.844-5.25-4.312 2.406z" />
+        <a className="profile__contact-link" href={info.linkedin} target="_blank" rel="noopener noreferrer">
+          <svg className="profile__contact-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" >
+            <title>LinkedIn</title>
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" stroke-width="0.05" stroke="#000000" stroke-opacity="1" />
           </svg>
         </a>
         <a className="profile__contact-link" href={`mailto: ${info.email}`}>
           <svg className="profile__contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <title>Email</title>
-              <path fill="none" d="M0 0h24v24H0z"/>
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
           </svg>
         </a>
         <a className="profile__contact-link" href={info.github} target="_blank" rel="noopener noreferrer">
