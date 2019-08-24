@@ -19,7 +19,7 @@
           "subtitle": "Developer",
           "location": "Reykjavik, Iceland",
           "period": "Summer 2019",
-          "description": "I was hired as a summer intern developer at LS Retail and was lucky enough to get handed a very real project for the summer, which gave me a lot of experience. I worked on an integration with a web service, using mostly .NET and C#.",
+          "description": "I was hired as a summer intern developer at LS Retail and was lucky enough to get handed a very real project. My task was integrating SAP Business One HANA (ERP-solution) with our point-of-sale solution LS One. I worked mostly in .NET with C#.",
           "img": "img/ls_retail.png",
           "color": "#004a87"
         },
