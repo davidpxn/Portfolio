@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom'
+import AOS from 'aos';
 
 import About from './routes/about/About';
 import List from './routes/list/List';
@@ -8,7 +9,17 @@ import Navbar from './components/navbar/Navbar';
 import Welcome from './components/welcome/Welcome';
 
 import './App.scss';
+import 'aos/dist/aos.css';
 import data from './data.json';
+
+// Import all images for the service worker to cache.
+function importAll(r) 
+{
+  return r.keys().map(r);
+}
+importAll(require.context('../public/img', false, /\.png$/));
+
+AOS.init();
 
 
 export default function App()
