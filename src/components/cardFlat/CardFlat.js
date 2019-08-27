@@ -1,8 +1,9 @@
 import React from 'react';
 
+import findImage from '../../ImgProvider'
+
 import Text from '../text/Text'
 import Image from '../image/Image'
-
 
 import './CardFlat.scss';
 
@@ -10,12 +11,13 @@ import './CardFlat.scss';
 export default function CardFlat(props) 
 {
   const item = props.item;
+  const img = findImage(item.img);
   const fadeType = props.index % 2 === 0 ? 'fade-left' : 'fade-right';
 
   return (
     <div className="card-flat" data-aos={fadeType} data-aos-duration="1000" data-aos-once="true">
       <div className="card-flat__img-container">
-        <Image className="card-flat__img" src={item.img} alt={item.title} color={item.color} />
+        <Image className="card-flat__img" src={img} alt={item.title} color={item.color} />
       </div>
 
       <div className="card-flat__info">

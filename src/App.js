@@ -12,13 +12,6 @@ import './App.scss';
 import 'aos/dist/aos.css';
 import data from './data.json';
 
-// Import all images for the service worker to cache.
-function importAll(r) 
-{
-  return r.keys().map(r);
-}
-importAll(require.context('../public/img', false, /\.png$/));
-
 AOS.init();
 
 

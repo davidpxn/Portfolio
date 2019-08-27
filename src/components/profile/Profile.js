@@ -1,5 +1,7 @@
 import React from 'react';
 
+import findImage from '../../ImgProvider'
+
 import Text from '../text/Text'
 
 import './Profile.scss';
@@ -8,13 +10,15 @@ import './Profile.scss';
 export default function Profile(props)
 {
   const info = props.info;
+  const img = findImage(info.img);
+
   const names = info.name.split(' ');
   const firstName = names[0];
   const restName = names.slice(1).join(' ');
 
   return (
     <div className="profile">
-      <img className="profile__img" src={info.img} alt={info.name} />
+      <img className="profile__img" src={img} alt={info.name} />
       <h2 className="profile__name">
         {firstName} <br/>
         {restName}
