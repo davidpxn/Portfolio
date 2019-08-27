@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import findImage from '../../ImgProvider'
+import findImage from '../../Images'
 
 import Text from '../text/Text'
 import Image from '../image/Image'
