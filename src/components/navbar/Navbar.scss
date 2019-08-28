@@ -45,7 +45,7 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: $point-phone-tablet) {
 
   .navbar {
     flex-direction: column;

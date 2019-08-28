@@ -8,6 +8,10 @@ $color-theme-dark: #000000;
 $color-theme-light: #ffffff;
 $color-theme-mid: #9ea0a6;
 
+$color-scrollbar-track: #f1f1f1;
+$color-scrollbar-thumb: #a5a5a5;
+$color-scrollbar-hover: #888888;
+
 
 /* Fonts */
 
@@ -22,6 +26,12 @@ $size-normal: 16px;
 $size-large: 20px;
 $size-xlarge: 24px;
 $size-xxlarge: 30px;
+
+
+/* Media query points */
+
+$point-phone-tablet: 800px;
+$point-tablet-desktop: 1100px;
 
 
 /* Animations */
@@ -82,5 +92,14 @@ $size-xxlarge: 30px;
   }
   100% {
       opacity: 1;
+  }
+}
+
+
+/* Mixin functions */
+
+@mixin scrollbar-width($width: 10px) {
+  &::-webkit-scrollbar {
+    width: $width;
   }
 }

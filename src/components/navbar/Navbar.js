@@ -6,7 +6,7 @@ import './Navbar.scss';
 
 export default function Navbar(props) 
 {
-  const isMobile = props.windowWidth < 800;
+  const isMobile = props.windowWidth < props.mediaQueryPoints.pointPhoneTablet;
 
   return (
     <nav>

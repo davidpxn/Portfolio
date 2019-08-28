@@ -19,7 +19,7 @@ export default function List(props)
   }
 
   
-  if (props.windowWidth < 1100) 
+  if (props.windowWidth < props.mediaQueryPoints.pointTabletDesktop) 
   {
     return (
       <div className="list">
