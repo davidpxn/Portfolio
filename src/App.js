@@ -20,6 +20,11 @@ export default function App()
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [isWelcoming, setIsWelcoming] = useState(true);
 
+  const mediaQueryPoints = {
+    pointPhoneTablet: 800,
+    pointTabletDesktop: 1100
+  }
+
   window.addEventListener(
     "resize",
     () =>
@@ -50,7 +55,7 @@ export default function App()
     
     renderElement = (
       <React.Fragment>
-        <Navbar tabs={navbarCategories} windowWidth={windowWidth} />
+        <Navbar tabs={navbarCategories} windowWidth={windowWidth} mediaQueryPoints={mediaQueryPoints} />
         <Switch>
           <Route
             exact path='/'
@@ -59,7 +64,7 @@ export default function App()
           {data.categories.map((category) => (
             <Route
               exact path={`/${category.slug}`}
-              render={(props) => <List {...props} category={category} windowWidth={windowWidth} />}
+              render={(props) => <List {...props} category={category} windowWidth={windowWidth} mediaQueryPoints={mediaQueryPoints} />}
               key={category.slug}
             />
           ))}

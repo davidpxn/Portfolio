@@ -6,8 +6,8 @@ $radius-border: 14px;
 .card-container {
   width: 80vw;
   height: 100vw;
-  max-width: 300px;
-  max-height: 375px;
+  max-width: 320px;
+  max-height: 400px;
   
   margin: 2rem;
   perspective: 1200px;
@@ -78,9 +78,7 @@ $radius-border: 14px;
   transform: rotateY(180deg);
   overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 0;  
-  }
+  @include scrollbar-width(0);
 
   &__info {
     text-align: right;

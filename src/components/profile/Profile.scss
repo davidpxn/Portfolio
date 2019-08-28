@@ -48,7 +48,7 @@ $animation-delay: 200ms;
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: $point-phone-tablet) {
 
   .profile {
     height: 100vh;

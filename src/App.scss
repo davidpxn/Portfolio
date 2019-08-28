@@ -16,17 +16,17 @@
 
   /* Track */
   &::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: $color-scrollbar-track; 
   }
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: #a5a5a5; 
+    background: $color-scrollbar-thumb; 
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: #888888; 
+    background: $color-scrollbar-hover; 
   }
 }
 
@@ -47,6 +47,7 @@ body {
   font-family: $font-main;
   font-size: $size-normal;
   line-height: 150%;
+  
   color: $color-font-main;
   background-color: $color-theme-light;
 }
