@@ -28,12 +28,13 @@
     flex-direction: column;
     width: 40%;
     height: 26vw;
-    margin: 3rem 2rem;
+    margin: 3rem 1.5rem;
   }
 
   &__header {
     display: flex;
     align-items: center;
+    margin: 0 0.5rem;
   }
 
   &__title {
@@ -43,12 +44,12 @@
 
   &__subtitle {
     font-size: $size-large;
-    margin-top: 1rem;
+    margin: 1rem 0.5rem 0 0.5rem;
   }
 
   &__period {
     font-size: $size-small;
-    margin-top: 1rem;
+    margin: 1rem 0.5rem 0 0.5rem;
     color: $color-font-light;
   }
 
@@ -64,7 +65,7 @@
     display: flex;
     align-items: center;
     font-size: $size-small;
-    margin-top: 2rem;
+    margin: 2rem 0.5rem 0 0.5rem;
   }
   
 
