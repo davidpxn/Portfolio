@@ -19,5 +19,5 @@ export default function findImage(img)
     const imgName = splitArray[0] + '.' + splitArray[2];
 
     return imgName === img;
-  })
+  });
 }
