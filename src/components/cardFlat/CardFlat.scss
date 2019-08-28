@@ -57,9 +57,7 @@
     padding: 0 0.5rem;
     overflow: auto;
 
-    &::-webkit-scrollbar {
-      width: 5px;
-    }
+    @include scrollbar-width(5px);
   }
 
   &__location {

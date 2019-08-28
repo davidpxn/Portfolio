@@ -78,10 +78,8 @@ $radius-border: 14px;
   transform: rotateY(180deg);
   overflow: auto;
 
-  &::-webkit-scrollbar {
-    width: 0;
-  }
-  
+  @include scrollbar-width(0);
+
   &__info {
     text-align: right;
 
