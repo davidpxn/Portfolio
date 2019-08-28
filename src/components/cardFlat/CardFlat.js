@@ -1,6 +1,6 @@
 import React from 'react';
 
-import findImage from '../../images'
+import findImage from '../../Omages'
 
 import Text from '../text/Text'
 import Image from '../image/Image'
