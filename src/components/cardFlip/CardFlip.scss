@@ -43,6 +43,7 @@ $radius-border: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  transform: rotateY(0deg);
 
   &__img {
     height: 100%;
@@ -78,6 +79,7 @@ $radius-border: 14px;
   transform: rotateY(180deg);
   overflow: auto;
 
+  scrollbar-width: none;
   @include scrollbar-width(0);
 
   &__info {
