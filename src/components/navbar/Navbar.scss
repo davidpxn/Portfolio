@@ -21,7 +21,6 @@
 
     margin: 0.5rem;
     padding: 0.5rem;
-    padding-right: 2px;
 
     font-size: $size-large;
     font-weight: bold;
@@ -33,10 +32,6 @@
 
     &--selected {
       background-position: left bottom;
-    }
-
-    &:last-child {
-      padding-right: 2rem;
     }
   }
 }
