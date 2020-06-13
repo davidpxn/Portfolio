@@ -16,9 +16,9 @@ export default function CardFlat(props)
 
   return (
     <div className="card-flat" data-aos={fadeType} data-aos-duration="1000" data-aos-once="true">
-      <div className="card-flat__img-container">
+      <a className="card-flat__img-container" href={item.link} target="_blank" rel="noopener noreferrer">
         <Image className="card-flat__img" src={img} alt={item.title} color={item.color} />
-      </div>
+      </a>
 
       <div className="card-flat__info">
         <div className="card-flat__header">

@@ -17,25 +17,22 @@
   }
 
   &__tab {
+    @include highlight(45%);
+
     margin: 0.5rem;
     padding: 0.5rem;
+    padding-right: 2px;
 
     font-size: $size-large;
     font-weight: bold;
     white-space: nowrap;
     text-decoration: none; 
-    color: $color-font-disabled;
+    color: $color-font-main;
+
+    transition: background-position 300ms ease;
 
     &--selected {
-      color: $color-font-main;
-
-      &:after {
-        display:block;
-        content: '';
-        border-bottom: solid 3px $color-theme-dark;  
-        padding-top: 1px;
-        transform: scaleX(1.1);
-      }
+      background-position: left bottom;
     }
 
     &:last-child {
@@ -58,25 +55,12 @@
 
     &__tab {
       padding: 0; 
+      padding-right: 12px !important;
+      padding-left: 2px;
 
-      &:after {
-        display:block;
-        content: '';
-        border-bottom: solid 3px $color-theme-dark;  
-        padding-top: 1px;
-
-        transform: scaleX(0);
-        transition: transform 250ms ease-in-out;
-        transform-origin: 0% 50%;
+      &:hover {
+        background-position: left bottom;
       }
-
-      &--selected:after, &:hover:after {
-        transform: scaleX(1.1);
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }   
     }
   }
   

@@ -6,11 +6,11 @@ $color-font-disabled: #c9c9c9;
 
 $color-theme-dark: #000000;
 $color-theme-light: #ffffff;
-$color-theme-mid: #9ea0a6;
+$color-theme-mid: #ababab;
 
-$color-scrollbar-track: #f1f1f1;
-$color-scrollbar-thumb: #b4b4b4;
-$color-scrollbar-hover: #949494;
+$color-scrollbar-track: #ffffff;
+$color-scrollbar-thumb: #ababab;
+$color-scrollbar-hover: #8b8b8b;
 
 
 /* Fonts */
@@ -102,4 +102,14 @@ $point-tablet-desktop: 1100px;
   &::-webkit-scrollbar {
     width: $width;
   }
+}
+
+@mixin highlight($height, $color: $color-theme-mid) {
+  /* The highlight will appear with: background-position: left bottom;
+     This can be used e.g on hover. */
+     
+  background: linear-gradient(to right, $color 50%, transparent 0%);
+  background-size: 200% $height;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
