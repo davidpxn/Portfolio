@@ -17,7 +17,7 @@ export default function Navbar(props)
             activeClassName="navbar__tab--selected"
             exact to={`/${tab.slug}`}
             key={tab.slug}
-            style={isMobile ? { animation: `slide-down ${300 + i*300}ms ease` } : { animation: `slide-right ${300 + i*300}ms ease` }}
+            style={isMobile ? { animation: `slide-down ${500 + i*400}ms ease` } : { animation: `slide-right ${500 + i*400}ms ease` }}
             replace
           >
             {tab.title}

@@ -2,14 +2,43 @@
 
 
 .welcome {
+  background-size: 100% 200%;
+  background-image: linear-gradient(to top, $color-theme-dark 50%, $color-theme-light 50%);
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   font-size: $size-large;
-  animation: slide-up-pause 2500ms ease;
+  animation: background-animation 1200ms ease-in 3000ms;
+  animation-fill-mode: forwards;
 
-  & * {
+  & > h1 {
+    font-size: $size-xlarge;
     font-weight: normal;
+    animation: text-animation 1900ms ease-in-out 400ms 2;
+  }
+}
+
+
+@keyframes text-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes background-animation {
+  0% {
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  80% {
+    background-position: 0 100%;
+    color: transparent;
+  }
+  100% {
+    background-position: 0 200%;
+    color: transparent;
   }
 }
