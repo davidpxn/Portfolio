@@ -17,10 +17,11 @@
   }
 
   &__tab {
-    @include highlight(45%);
+    @include highlight(35%);
 
     margin: 0.5rem;
     padding: 0.5rem;
+    padding-bottom: 0;
 
     font-size: $size-large;
     font-weight: bold;
@@ -49,11 +50,17 @@
     width: 180px;
 
     &__tab {
+      @include highlight(45%);
+
       padding: 0; 
       padding-right: 12px !important;
       padding-left: 2px;
 
       &:hover {
+        background-position: left bottom;
+      }
+
+      &--selected {
         background-position: left bottom;
       }
     }
