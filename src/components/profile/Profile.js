@@ -18,13 +18,15 @@ export default function Profile(props)
 
   return (
     <div className="profile">
-      <img className="profile__img" src={img} alt={info.name} />
-      <h2 className="profile__name">
-        {firstName} <br/>
-        {restName}
-      </h2> 
+      <div className="profile__header">
+        <img className="profile__img" src={img} alt={info.name} />
+        <h2 className="profile__name">
+          {firstName} <br />
+          {restName}
+        </h2>
+      </div>
       <div className="profile__about">
-        <Text text={info.about} align="center"/>
+        <Text text={info.about} align="center" />
       </div>
       <div className="profile__contact-links">
         <a className="profile__contact-link" href={info.linkedin} target="_blank" rel="noopener noreferrer">
@@ -36,8 +38,8 @@ export default function Profile(props)
         <a className="profile__contact-link" href={`mailto: ${info.email}`}>
           <svg className="profile__contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <title>Email</title>
-            <path fill="none" d="M0 0h24v24H0z"/>
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z" />
           </svg>
         </a>
         <a className="profile__contact-link" href={info.github} target="_blank" rel="noopener noreferrer">
