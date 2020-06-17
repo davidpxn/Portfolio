@@ -52,6 +52,9 @@ body {
   
   color: $color-font-main;
   background-color: $color-theme-light;
+
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 img {

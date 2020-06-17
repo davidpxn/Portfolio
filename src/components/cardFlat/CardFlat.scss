@@ -8,6 +8,9 @@
   &__img-container { 
     width: 35vw;
     height: 28vw;
+    max-width: 625px;
+    max-height: 500px;
+
     margin: 2rem;
     overflow: hidden;
   }
@@ -15,6 +18,7 @@
   &__img {
     width: 110%;
     height: 110%;
+
     object-fit: cover;
     transition: transform 500ms ease;
 
@@ -26,8 +30,11 @@
   &__info {
     display: flex;
     flex-direction: column;
+
     width: 40%;
     height: 26vw;
+    max-height: 500px;
+
     margin: 3rem 1.5rem;
   }
 

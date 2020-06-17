@@ -5,7 +5,9 @@
   display: flex;
   justify-content: space-between;
   overflow: auto;
+  max-width: 700px;
 
+  margin: 0 auto;
   padding: 0.5rem 1rem;
   font-family: $font-navbar;
 
@@ -38,7 +40,7 @@
 }
 
 
-@media (min-width: $point-phone-tablet) {
+@media (min-width: $point-tablet-desktop) {
 
   .navbar {
     flex-direction: column;

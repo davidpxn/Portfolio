@@ -2,6 +2,11 @@
 
 
 .welcome {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+
   background-size: 100% 200%;
   background-image: linear-gradient(to top, $color-theme-dark 50%, $color-theme-light 50%);
 

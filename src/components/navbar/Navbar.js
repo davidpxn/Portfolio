@@ -6,7 +6,7 @@ import './Navbar.scss';
 
 export default function Navbar(props) 
 {
-  const isMobile = props.windowWidth < props.mediaQueryPoints.pointPhoneTablet;
+  const isDesktop = props.windowWidth > props.mediaQueryPoints.pointTabletDesktop;
 
   return (
     <nav>
@@ -17,7 +17,7 @@ export default function Navbar(props)
             activeClassName="navbar__tab--selected"
             exact to={`/${tab.slug}`}
             key={tab.slug}
-            style={isMobile ? { animation: `slide-down ${500 + i*400}ms ease` } : { animation: `slide-right ${500 + i*400}ms ease` }}
+            style={isDesktop ? { animation: `slide-right ${500 + i*400}ms ease` } : { animation: `slide-down ${500 + i*400}ms ease` }}
             replace
           >
             {tab.title}
