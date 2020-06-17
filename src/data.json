@@ -10,6 +10,32 @@
   },
   "categories": [
     {
+      "title": "Projects",
+      "slug": "projects",
+      "content": [
+        {
+          "id": "projects_inline",
+          "title": "inline",
+          "subtitle": "Web application",
+          "period": "2020",
+          "description": "For my final project while studying software engineering, I created inline.\nIt is a modern web-based queue management system (QMS) and its purpose is to replace traditional QMSs where instead of paper tickets, customers get a digital ticket via SMS.\nAt the moment, the project is still a work in progress and the SMS feature is not available for everyone, so if you are interested in using inline feel free to contact me.",
+          "img": "inline.png",
+          "link": "https://web-inline.herokuapp.com/",
+          "color": "#3200FF"
+        },
+        {
+          "id": "projects_vrumm",
+          "title": "Vrúmm",
+          "subtitle": "App Android/iOS",
+          "period": "2018",
+          "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of 2019, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. Users can create an advertisement for a car, browse other cars and message users through the app.",
+          "img": "vrumm.png",
+          "link": "https://www.facebook.com/vrummapp/",
+          "color": "#76b26c"
+        }
+      ]
+    },
+    {
       "title": "Experience",
       "slug": "experience",
       "content": [
@@ -73,32 +99,6 @@
           "img": "mr.png",
           "link": "https://www.mr.is/",
           "color": "#608b96"
-        }
-      ]
-    },
-    {
-      "title": "Projects",
-      "slug": "projects",
-      "content": [
-        {
-          "id": "projects_inline",
-          "title": "inline",
-          "subtitle": "Web application",
-          "period": "2020",
-          "description": "For my final project while studying software engineering, I created inline.\nIt is a modern web-based queue management system (QMS) and its purpose is to replace traditional QMSs where instead of paper tickets, customers get a digital ticket via SMS.\nAt the moment, the project is still a work in progress and the SMS feature is not available for everyone, so if you are interested in using inline feel free to contact me.",
-          "img": "inline.png",
-          "link": "https://web-inline.herokuapp.com/",
-          "color": "#3200FF"
-        },
-        {
-          "id": "projects_vrumm",
-          "title": "Vrúmm",
-          "subtitle": "App Android/iOS",
-          "period": "2018",
-          "description": "In the summer of 2018, me and my friend created the app Vrúmm. It was released in the beginning of 2019, for both iOS and Android.\nVrúmm is a platform for users to sell and buy cars. Users can create an advertisement for a car, browse other cars and message users through the app.",
-          "img": "vrumm.png",
-          "link": "https://www.facebook.com/vrummapp/",
-          "color": "#76b26c"
         }
       ]
     }
