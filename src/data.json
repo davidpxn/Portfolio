@@ -6,7 +6,7 @@
     "email": "davidpxn97@gmail.com",
     "github": "https://github.com/davidpxn",
     "linkedin": "https://linkedin.com/in/davidpxn",
-    "about": "Hi, my name is Davíð.\nI'm 22 years old, originally from Vietnam and raised in Iceland. I'm an everything software and technology enthusiast with a passion for design and pretty things.\n Feel free to reach out if you have ideas you want to talk about, wether it is related to technology, design or something else."
+    "about": "Hi, my name is Davíð.\nI'm 22 years old, originally from Vietnam and raised in Iceland. I'm an everything software and technology enthusiast with a passion for design and pretty things.\n Feel free to reach out if you have ideas you want to talk about, whether it is related to technology, design or something else."
   },
   "categories": [
     {
@@ -85,7 +85,7 @@
           "title": "inline",
           "subtitle": "Web application",
           "period": "2020",
-          "description": "For my final project while studying software engineering, I created inline.\nIt is a modern web-based queue management system (QMS) and its purpose is to replace traditional QMSs where instead of paper tickets, customers get a digital ticket via SMS.\nAt the moment, the SMS feature is not available for everyone, so if you are interested in using inline feel free to contact me.",
+          "description": "For my final project while studying software engineering, I created inline.\nIt is a modern web-based queue management system (QMS) and its purpose is to replace traditional QMSs where instead of paper tickets, customers get a digital ticket via SMS.\nAt the moment, the project is still a work in progress and the SMS feature is not available for everyone, so if you are interested in using inline feel free to contact me.",
           "img": "inline.png",
           "link": "https://web-inline.herokuapp.com/",
           "color": "#3200FF"
