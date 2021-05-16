@@ -42,6 +42,17 @@
       "slug": "experience",
       "content": [
         {
+          "id": "experience_sendiradid",
+          "title": "Sendiráðið",
+          "subtitle": "Software developer",
+          "location": "Reykjavik, Iceland",
+          "period": "2020 - now",
+          "description": "I am currently working as a web developer at the creative software company Sendiráðið.",
+          "img": "sendiradid.png",
+          "link": "https://www.sendiradid.is/",
+          "color": "#DE3C46"
+        },
+        {
           "id": "experience_lsretail",
           "title": "LS Retail",
           "subtitle": "Developer",
@@ -86,7 +97,7 @@
           "subtitle": "BSc Software Engineering",
           "location": "Reykjavik, Iceland",
           "period": "2017 - 2020",
-          "description": "I went straight to university after having finsihed junior collage and chose to study software engineering. In 2020, I received my BSc degree.",
+          "description": "I went straight to university after having finsihed junior collage and chose to study software engineering. I received my BSc degree in 2020.",
           "img": "hi.png",
           "link": "https://www.hi.is/",
           "color": "#4a4a4a"
