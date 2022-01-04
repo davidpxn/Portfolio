@@ -8,13 +8,23 @@
     "linkedin": "https://linkedin.com/in/davidpxn",
     "dribbble": "https://dribbble.com/davidpxn",
     "instagram": "https://www.instagram.com/davidpxn97",
-    "about": "Hi, my name is Davíð.\nI'm 23 years old, originally from Vietnam and raised in Iceland. I'm an everything software and technology enthusiast with a passion for design and pretty things.\n Feel free to reach out if you have ideas you want to talk about, whether it is related to technology, design or something else."
+    "about": "Hi, my name is Davíð.\nI'm 24 years old, originally from Vietnam and raised in Iceland. I'm an everything software and technology enthusiast with a passion for design and pretty things.\n Feel free to reach out if you have ideas you want to talk about, whether it is related to technology, design or something else."
   },
   "categories": [
     {
       "title": "Projects",
       "slug": "projects",
       "content": [
+        {
+          "id": "projects_kanye",
+          "title": "Kanye West",
+          "subtitle": "Website",
+          "period": "2021",
+          "description": "A fun school-project that I made while studying multimedia design. The assignment was to create an intrest-based website and because I am a big Kanye fan I created a discography for all Kanye West's albums.",
+          "img": "kanye.png",
+          "link": "http://davidpxn.com/semester_1/theme_02_basic_web/02.03.01_interest_based_website/",
+          "color": "#181645"
+        },
         {
           "id": "projects_inline",
           "title": "inline",
@@ -91,6 +101,17 @@
       "title": "Education",
       "slug": "education",
       "content": [
+        {
+          "id": "education_kea",
+          "title": "Copenhagen School of Design and Technology",
+          "subtitle": "Multimedia Design",
+          "location": "Copenhagen, Denmark",
+          "period": "2021",
+          "description": "Because of my interest in design I wanted to try to expand my skills and dive into design, especially UI/UX. I got to touch on all kinds of design in the education, e.g. UI/UX, graphic design, illustrations, photo editing and more.\nI finished one semester but had to move back to Iceland because of personal reasons.",
+          "img": "kea.png",
+          "link": "https://www.kea.dk/",
+          "color": "#EA4D44"
+        },
         {
           "id": "education_hi",
           "title": "University of Iceland",
